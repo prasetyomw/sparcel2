@@ -1,0 +1,86 @@
+/* Reset some default styles for better consistency across browsers */
+body, h1, p, ul, li {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    position: relative;
+    color: #ffffff;
+  }
+  
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('img/jihyo3.webp'); /* Replace with your actual image file name and path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+/*     filter: blur(8px); /* Adjust the blur amount as needed */
+ */    opacity: 100; /* Adjust the opacity to control darkness */
+    z-index: -1; /* Ensure the overlay is behind other content */
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  h1 {
+    color: #007bff;
+  }
+  
+  p {
+    line-height: 1.6;
+  }
+  
+  a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Example navigation bar */
+  .navbar {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+  }
+  
+  .navbar a {
+    margin-right: 15px;
+    color: #fff;
+  }
+  
+  /* Responsive design for smaller screens */
+  @media screen and (max-width: 600px) {
+    h1 {
+      font-size: 24px;
+    }
+  
+    button {
+      padding: 8px 16px;
+    }
+  }
+  
